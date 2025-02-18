@@ -13,14 +13,15 @@
 
 .logo span {
   font-style: italic;
-  font-family: cursive;
-  font-weight: 800;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  color: rgb(184, 144, 11);
 }
 
 .nav-right {
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
+  column-gap: 17px;
 }
 
 .nav-links {
@@ -28,6 +29,11 @@
   flex-direction: row;
   column-gap: 20px;
 }
+
+/* .nav-search i {
+  width: 20%;
+  height: 20%;
+} */
 
 .hero {
   height: 100vh;
@@ -45,15 +51,16 @@
   align-items: center;
   row-gap: 20px;
   height: 100%;
-  background-color: rgba(15, 14, 14, 0.6);
+  background-color: rgba(24, 21, 21, 0.58);
 }
 .hero h1 {
-  font-size: 4.5rem;
+  font-size: 50px;
   color: white;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .hero p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: white;
 }
 
@@ -67,24 +74,32 @@
 }
 
 .hero-buttons :last-child {
-  padding: 6px 20px;
+  padding: 6px 25px;
   color: white;
   font-size: 1.2rem;
   text-transform: uppercase;
   background-color: transparent;
-  border: 3px solid white;
+  border: 1px solid white;
   margin-left: 20px;
 }
+
+/* .hero-buttons:last-child:hover {
+  background-color: rgb(184, 144, 11);
+  opacity: 0.5;
+} */
 
 .tools-section {
   width: 80%;
   height: 100vh;
   display: flex;
   align-items: center;
-margin:0 auto;
+  margin: 0 auto;
   column-gap: 10rem;
 }
 
+.tools-section-text {
+  row-gap: 30px;
+}
 .tools-section img {
   width: 70%;
 }
@@ -93,7 +108,7 @@ margin:0 auto;
   line-height: 30px;
 }
 
-.Seo-text {
+.seo-text {
   font-style: italic;
   font-family: cursive;
   font-weight: 800;
@@ -109,14 +124,18 @@ margin:0 auto;
 }
 
 .brushes-section {
-  width: 80%;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
-margin:0 auto;
   column-gap: 10rem;
+  background-color: #f5f5f5;
 }
 
+/* .brushes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
 .brushes-section img {
   width: 100%;
   height: 60%;
@@ -124,6 +143,7 @@ margin:0 auto;
 
 .brushes-section div {
   line-height: 30px;
+  row-gap: 10px;
 }
 .brushes-section button {
   background-color: rgb(184, 144, 11);
@@ -131,11 +151,105 @@ margin:0 auto;
   color: white;
   border: none;
   font-size: 0.8rem;
+  row-gap: 100px;
   text-transform: uppercase;
 }
 
-.brush-text {
+.brushes-text {
   font-style: italic;
   font-family: cursive;
   font-weight: 800;
+}
+
+.fourth-section {
+  background-image: url(../images/painting-info.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: static;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  color: #f5f5f5;
+  height: 50vh;
+}
+
+.fourth-section h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+}
+
+.fourth-section p {
+  width: 75%;
+  font-size: 1.2rem;
+}
+
+.fourth-section-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  height: 100%;
+  background-color: rgba(15, 14, 14, 0.5);
+}
+
+.fourth-section-overlay button {
+  background-color: rgb(184, 144, 11);
+  padding: 15px 60px;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.fifth-section-container {
+  height: 100vh;
+  margin-top: 8ch;
+}
+
+.fifth-section h5 {
+  font-family: inherit;
+  font-size: 30px;
+  font-weight: 200;
+}
+
+.fifth-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 25px;
+  row-gap: 30px;
+}
+.fifth-section p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.fifth-section-button {
+  background-color: rgb(184, 144, 11);
+  padding: 15px 60px;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.fifth-section img {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.section-six {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  line-height: 50px;
+  color: #f5f5f5;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
 }
